@@ -1,0 +1,13 @@
+[package]
+name = "fzr"
+version = "0.1.0"
+authors = ["scarab5q <jmdenny1@sheffield.ac.uk>"]
+edition = "2018"
+
+[dependencies]
+# tui-rs = "0.4.0" -- this will come later
+
+fst = "0.3"
+fst-levenshtein = "0.2.1"
+fst-regex = "0.2.2"
+futures-io = "0.2.1"
