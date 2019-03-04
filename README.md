@@ -26,7 +26,7 @@
     or usable as you would like.
 
     So after trying all of these fuzzy finders I decided that what really needs to
-    be made is a fuzzy finder that can be configured to **EXACTLY** how you would
+    be made is a fuzzy finder that can be configured to ***EXACTLY*** how you would
     like it for any given situation. Sort of like how your favourite text editor
     works, using modular components so that you can avoid writing out long terminal
     commands or setting many enviroment variables. In the future I hope to get a
@@ -35,26 +35,34 @@
 
 ## How this all works
 every finder has the following components:
-- *input*
+- **input**
+
 the items to be searched
 
-- *preprocessing* (optional)
+- **preprocessing** (optional)
+
 optional values that have been pre-assigned to the search items to improve search speed.
 e.g. an index, hash map, etc
 
-- *user/query input*
-the mechanism by which the query is read in by the finder
+- **user/query input**
 
-- *matching*
+the mechanism by which the query is read in by the finder and also so that user
+input can be used to change other components. e.g. a keyboard shortcut to allow
+for regex matching
+
+- **matching**
+
 the algorithm used to find items that match a given query
 
-- *ranking*
+- **ranking**
+
 algorithm to determine the ranking of the the
 
-- *command*
+- **command**
+
 what needs to be done with the selected item/s
 
-- *display*
+- **display**
 how the whole program is displayed. So for example
 
 to be good unix citizens it makes more sense to make sure each one of these
