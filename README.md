@@ -34,21 +34,45 @@
     when.
 
 ## How this all works
-	every finder has the following components:
-		- search input  
-        
-		- *preprocessing* (optional) 
-         values that have been pre-assigned to the search items to improve search speed_
-		
-        - query input
-		
-        - matching
-		
-        - output - what needs to be done with the selected item/s
+every finder has the following components:
+- *input*
+the items to be searched
+
+- *preprocessing* (optional)
+optional values that have been pre-assigned to the search items to improve search speed.
+e.g. an index, hash map, etc
+
+- *user/query input*
+the mechanism by which the query is read in by the finder
+
+- *matching*
+the algorithm used to find items that match a given query
+
+- *ranking*
+algorithm to determine the ranking of the the
+
+- *command*
+what needs to be done with the selected item/s
+
+- *display*
+how the whole program is displayed. So for example
 
 to be good unix citizens it makes more sense to make sure each one of these
 components is as good as they can possibly be before bringing them all together
-to get what you want
+to make sure everything works as well as possible
+
+## Project Goals
+### Goals
+- to be the fastest fuzzy finder there is
+- have every component optionally execute asynchronously
+- easy configuration and extensibility through plugins and a config file
+- for each component to be able to be written in any language a user wants
+- A common IO format for each component so that they are all compatible with
+each other
+### Non - Goals
+
+### Ideas
+- Make fzy into a library so that it can be added to anything
 
 ## Installation - **TODO**
 ## Configuration - **TODO**
