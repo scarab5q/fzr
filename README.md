@@ -35,12 +35,16 @@
 
 ## How this all works
 	every finder has the following components:
-		- input  - _the search items that you want to have searched_
-		- preprocessing (optional) - _values that have been pre-assigned to the
-search items to improve search speed_
-		- query input
-		- matching
-		- output - what needs to be done with the selected item/s
+		- search input  
+        
+		- *preprocessing* (optional) 
+         values that have been pre-assigned to the search items to improve search speed_
+		
+        - query input
+		
+        - matching
+		
+        - output - what needs to be done with the selected item/s
 
 to be good unix citizens it makes more sense to make sure each one of these
 components is as good as they can possibly be before bringing them all together
